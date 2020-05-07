@@ -1,2 +1,2 @@
 # CheckPod
-Check pod
+Check pod description
