@@ -1,16 +1,17 @@
-Pod::Spec.new do |spec|
-  spec.name         = "CheckPod"
-  spec.version      = "1.2"
-  spec.summary      = "Create new app for pod testing"
-  spec.description  = <<-DESC
+Pod::Spec.new do |s|
+  s.name         = "CheckPod"
+  s.version      = "1.2"
+  s.summary      = "Create new app for pod testing"
+  s.description  = <<-DESC
                     Create new app for pod testing checking all code !
                   DESC
-  spec.homepage     = "https://www.indianic.com/"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Manish mundra" => "manish.mundra@indianc.com" }
-  spec.platform     = :ios, "12.0"
+  s.homepage     = "https://www.indianic.com/"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "Manish mundra" => "manish.mundra@indianc.com" }
+  s.platform     = :ios, "12.0"
   # spec.source       = { :http => 'file:' + __dir__ + "/" }
-  spec.source       = { :git => "https://github.com/Manish-mundra/CheckPod.git", :tag => "#{1.2}" }
-  spec.source_files  = 'TestAppPod/*.{h,m,swift}'
-  spec.swift_version = "5.0"
+  s.source       = { :git => "https://github.com/Manish-mundra/CheckPod.git", :tag => "#{1.2}" }
+  # spec.source       = { :git => "https://github.com/Manish-mundra/CheckPod.git", :branch => "develop" }
+  s.source_files  = 'TestAppPod/Controller/*.swift'
+  s.swift_version = "5.0"
 end
